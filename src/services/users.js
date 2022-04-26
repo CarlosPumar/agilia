@@ -13,7 +13,7 @@ const post = async (newUser) => {
 };
 
 const put = async (newObject) => {
-  const request = await axios.post(`${baseUrl}/${newObject.id}`, newObject);
+  const request = await axios.put(`${baseUrl}/${newObject.id}`, newObject);
   return request.data;
 };
 
